@@ -1,0 +1,135 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #0a7313;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Toolbar Buttons */
+  .toolbar {
+    display: flex;
+    justify-content: center;
+    background-color: #e8e8e8;
+    padding: 10px;
+  }
+  
+  .toolbar button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+  }
+  
+  .toolbar button:hover {
+    background-color: #ddd;
+  }
+  
+  /* General Button Styling */
+  button {
+    transition: background-color 0.3s;
+  }
+
+/* Button Active State */
+  button.active {
+    background-color: orange; /* Highlight color */
+    color: green;
+  }
+
+  /* Sorting Visualizer */
+  .visualizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 300px;
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+  
+  .bar {
+    /* display: inline-block; */
+    background-color: blue;
+    transition: height 0.5s ease; /* Add this for smooth height transition */
+    background-color: #87cefa;
+    width: 20px;
+    margin: 0 2px;
+    display: inline-block;
+    text-align: center;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+  }
+  
+  .upside-down {
+    transform: rotateX(180deg); /* Flip vertically */
+  }
+  
+  .upside-down .bar {
+    transform: rotateX(180deg); /* Revert the bars themselves */
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+  }
+
+  
+  .bar span {
+    display: none;
+  }
+  
+  /* Control Panel */
+  .controls {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #ddd;
+  }
+  
+  .speed-control {
+    margin: 10px 0;
+  }
+  
+  .speed-control label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  input[type="range"] {
+    margin: 0 10px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #0a7313;
+  }
+  
