@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="header">Comparison Sorting Algorithms</div>
+
+  <div class="toolbar">
+    <button onclick="handleButtonPress(this, 'randomizeArray')">Randomize Array</button>
+    <button onclick="handleButtonPress(this, 'insertion')">Insertion Sort</button>
+    <button onclick="handleButtonPress(this, 'selection')">Selection Sort</button>
+    <button onclick="handleButtonPress(this, 'bubble')">Bubble Sort</button>
+    <button onclick="handleButtonPress(this, 'quick')">Quick Sort</button>
+    <button onclick="handleButtonPress(this, 'merge')">Merge Sort</button>
+    <button onclick="handleButtonPress(this, 'changeSize')">Change Size</button>
+  </div>
+
+  <div class="visualizer" id="visualizer">
+    <!-- Bars will be dynamically created by JavaScript -->
+  </div>
+
+  <div class="controls">
+    <button onclick="handleButtonPress(this, 'pause')">Pause</button>
+    <button onclick="handleButtonPress(this, 'resetBarColors')">Reset</button>
+    <button onclick="toggleBarsPosition()">Move Bars</button>
+
+
+    <div>
+      <label for="speed-slider">Animation Speed:</label>
+      <input
+        type="range"
+        id="speed-slider"
+        min="10"
+        max="2000"
+        step="10"
+        value="700"
+        onchange="updateSpeed(this.value)"
+      />
+      <span id="speed-value">700ms</span>
+    </div>
+    
+  </div>
+
+  <footer>Algorithm Visualizations</footer>
+</body>
+</html>
